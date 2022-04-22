@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background:linear-gradient(#d8edf8,#fff );
+
+}
+
+header  .nav{
+   position: fixed;
+   width: 100%;
+}
+
+
+
+li ,a ,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links  li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #3ca9e2;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #3ca9e2 ;
+    border: none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0.3s case 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136,169,0.8);
+}
+
+.content{
+    color: #3ca9e2;
+    position:absolute;
+    top: 80px;
+    left:10%;
+    /* transform:translateY(-50%) ; */
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+.hero{
+    width: 100%;
+    height: 120vh;
+    background-color: #fff ;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+
+
+.side-bar{
+    width: 50px;
+    height: 120vh;
+    background:linear-gradient(#fff ,#d8edf8 );
+    position:absolute;
+    text-align: center;
+    left: 0;
+    top:0;
+    transition:0.3s ;
+    transform: translate(-95%,0);
+}
+.side-bar:hover{
+    transform: translate(0,0);
+
+}
+
+#menu{
+    display: block;
+    width: 50px;
+    margin: 60px auto 0 ;
+    cursor: pointer;
+   
+    
+}
+
+.social-links img,.useful-links img{
+    width: 25px;
+    margin: 5px auto;
+    cursor:pointer;
+}
+
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.useful-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
+.bubbles img { 
+    width:50px ;
+    animation: bubble 7s linear infinite;
+
+}
+
+.bubbles  { 
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+    
+    
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 60px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 60px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width: 30px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 35px;
+}
+
+
+
+
+
+
+.container{
+    height:100vh;
+    width: 51%;
+    position:absolute;
+    right: 1%;
+    font-size: 32px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #fff;
+    
+}
+
+.sieniority-row{
+    width: 70%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 25px;
+  
+  }
+  
+  .sieniority-col{
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+.container h2{
+    color: #000;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+    
+}
+.sieniority-col p{
+    font-size: 22px;
+}
+
+.sieniority-col h3{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+
+}
+
+.sieniority-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+
+.sieniority-col ul li {
+    margin: 15px 0;
+    color: #fff;
+
+
+}
+
+.sieniority-col ul li::before{
+    content: '\2022';
+    /* color: #e33058; */
+    color: #3ca9e2;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+.sieniority-col button{
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid  #3ca9e2;
+    border-radius: 6px;
+    margin-top:30px ;
+    cursor: pointer;
+    transition: background 0.5s;
+
+}
+
+.sieniority-col button:hover{
+    background: #3ca9e2 ;
+}
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+}
+
+
+
+
+body .insights {
+    position:absolute;
+    /* background: red; */
+    left: 187px;
+    top:200px;
+    width: 600px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.5rem;
+    padding: auto;
+   
+}
+
+body .insights >div {
+    background: #fff;
+    padding: 1% 1%;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* width: 250px;
+    height: 200px; */
+    transition: all 300ms ease;
+    /* left: 10px; */
+    height: 250px;
+
+}
+
+
+
+body .insights >div:hover{
+    box-shadow: none;
+  
+}
+.insights div span{
+    background: #1f283b;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color:#fff;
+    font-size:2rem;
+}
+
+.insights div .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights div h3{
+    margin: 1rem 0 0 0.6rem;
+    font-size: 1rem;
+}
+
+.insights div h1{
+    margin: 1rem 0 0 0.6rem;
+    font-size: 1.5rem;
+}
+
+.insights .progress{
+    position:relative;
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+}
+
+.insights svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+.insights svg circle{
+    fill: none;
+    stroke: #3ca9e2 ;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+.insights .project1 svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+.insights .project2 svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 100;
+}
+.insights .project3 svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 100;
+}
+.insights .project4 svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 100;
+}
+.insights .progress .number{
+    position: absolute;
+    top:15px;
+    left:12px;
+    height: 50%;
+    width: 50%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+
+
+}

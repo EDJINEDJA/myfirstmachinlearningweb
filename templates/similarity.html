@@ -1,0 +1,121 @@
+{% extends 'base_similarity.html' %}
+
+{%block head %}
+{{ dropzone.load_css() }}
+{{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px; text-align: center; margin-top:15%;') }}
+
+{% endblock %}
+
+{%block body %}
+<body>
+    <header>
+        <img class="logo" src="https://4mece.com/wp-content/uploads/2018/11/Logo-IAEMS-Logo-500x500-447x447.png" alt="logo" height="45" width="45">
+    <nav id="navbar">
+        <ul  class="nav_links">
+            <li> <a href="#">Automaticall toolkit </a></li>
+            <li> <a href="#">Project </a></li>
+            <li> <a href="#">about </a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html" ><button>Contact</button></a>
+    </header>
+
+    <div class="side-bar">
+        <a href="home.html"><img src="https://cdn.onlinewebfonts.com/svg/img_569265.png" class="menu"></a>
+        <div class="social-links">
+            
+            <a href="https://github.com/EDJINEDJA"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png"></a>
+           <a href="https://www.linkedin.com/feed/"> <img src="https://cdn3.iconfinder.com/data/icons/social-icons-5/606/LinkedIn.png"></a>
+           <a href="https://www.youtube.com/channel/UCet7aR9RYitkg5H0YXHHlmA"> <img src="https://www.freepngimg.com/thumb/youtube/77758-logo-live-computer-youtube-icons-png-download-free.png"></a>
+        </div>
+
+        <div class="useful-links">
+            <img src="https://pngimg.com/uploads/share/share_PNG30.png">
+            <img src="https://www.pinclipart.com/picdir/big/98-989061_svg-link-clip-art-royalty-free-download-link.png">
+        </div>
+        
+    </div>
+    <div class="bubbles">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        
+    </div>
+
+    <div class="popup" >
+        <img src="https://www.klraccounting.com.au/wp-content/uploads/2013/05/post-icon.png">
+      
+        <p>  {%for message in get_flashed_messages()%}
+        
+         
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <h2>Thank You!</h2>
+                <p> The similarity between the two documents </p>
+                <br> is {{message}}.
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
+            </div>
+            {% endfor%}
+        </p>
+       
+    </div>
+
+    <div class="describe_project" >
+        <h1 > Description <br> <br></h1>
+        This tools are help us to compute the <br>
+        similarity between two documents.it use spacy packages and 
+        scipy.<br>
+        <br>
+        SpaCy is one of the main Python language libraries for Natural Language Processing (NLP).<br><br>
+        Natural language processing or NLP is a branch of artificial intelligence that is increasingly used.
+        
+        <br>
+        <br>
+        This technology makes it possible to automatically analyze texts in everyday language, in order to understand their meaning.
+        <br>
+        <br>
+        <a class="cta" href="https://datascientest.com/spacy" ><button>More or click about</button></a>
+    </div>
+
+    <!-- <div class='alert'>
+        {%for message in get_flashed_messages()%}
+        
+         
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                The similarity of the two documents is <br> {{message}}.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {% endfor%}
+    </div> -->
+ 
+    
+
+
+    <div class="wrapper-dragdrop">
+        
+        <div class="title">File Uploader (similarity)</div>
+        
+        {{ dropzone.create(action='upload') }}
+        {{ dropzone.load_js() }}
+        {{ dropzone.config() }}
+        <form action="{{ url_for('predict')}}"method="post">
+            <div class="box">
+                <select name="similarity_select" >
+                  <option>Similarity spacy</option>
+                  <option>Nlp similarity</option>
+                  <option>Levenshtein</option>
+                  <option>Normalized levenshtein</option>
+                  <option>Jarowinkler</option> 
+                  <option>NGram similarity</option> -->
+                </select>
+            </div>
+            <button  type="submit">Compute similarity</button>  
+        </form>
+    </div>
+    
+  
+    
+</body>
+{% endblock %}

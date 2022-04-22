@@ -1,0 +1,92 @@
+{% extends 'base_contact.html' %}
+{%block head %}
+
+{% endblock %}
+
+
+
+{%block body %}
+<body>
+    <div class="container">
+        <h1> Connect With Us </h1>
+        <p> 
+            We would love to respond to your querries and help you succed.<br> Fell 
+            free to get in touch with us.
+        </p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3> Sent your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label> Name </label>
+                            <input type="text" placeholder="dupond delaru">
+                        </div>
+
+                        <div class="input-group">
+                            <label> Phone </label>
+                            <input type="text" placeholder="(+33) 6 05 71 95 82 ">
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label> Email </label>
+                            <input type="text" placeholder="duponddelaru@gmail.com">
+                        </div>
+
+                        <div class="input-group">
+                            <label> Subject </label>
+                            <input type="text" placeholder="About projects">
+                        </div>
+                    </div>
+
+                    <label> Message</label>
+                    <textarea row="5" placeholder="your Message"></textarea>
+     
+                    <button type="submit"  class="btn" onclick="afficher()">SEND</button>
+
+                    <div class="popup" >
+                        <img src="https://pluspng.com/img-png/success-png-png-svg-512.png">
+                        <h2>Thank You!</h2>
+                        <p> You has been successfully <br> submited. Thanks!</p>
+                        <button type="button" class="close" onclick="afficher()">OK</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3> Reach us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>automaticall06@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>(+33) 06 05 61 97 81 </td>
+                    </tr>
+
+                    <tr>
+                        <td>Adrress</td>
+                        <td>11 Rue Pégurier Le Vincent Van Gogh </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <div class="bubbles">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+            <!-- <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0"> -->
+        </div>
+    </div>
+   
+</body>
+
+
+{% endblock %}

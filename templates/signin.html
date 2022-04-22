@@ -1,0 +1,68 @@
+{% extends 'base_signin.html' %}
+
+{%block head %}
+
+{% endblock %}
+
+
+{%block body %}
+<body>
+    <header>
+        <img class="logo" src="https://4mece.com/wp-content/uploads/2018/11/Logo-IAEMS-Logo-500x500-447x447.png" alt="logo" height="45" width="45">
+    <nav id="navbar">
+        <ul  class="nav_links">
+            <li> <a href="#">Automaticall toolkit </a></li>
+            <li> <a href="#">Project </a></li>
+            <li> <a href="#">about </a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="contact.html" ><button>Contact</button></a>
+    </header>
+
+    <div class="bubbles">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        <img src="https://th.bing.com/th/id/R.1865fb8b95dbffe94dfef3e53dee15a0?rik=Lbp7tNVJiCuX8g&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2fbattlefordreamisland%2fimages%2f1%2f1b%2fOld_Bubble.png%2frevision%2flatest%2fscale-to-width%2f475%3fcb%3d20130819090427&ehk=xK2%2b0B2Ys%2fufY3PeZaDBP4OATvF4y2otgN6L04FNiWA%3d&risl=&pid=ImgRaw&r=0">
+        
+    </div>
+
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-left">
+            <h3> Sign Up</h3>
+            <form id="signup-form" action="/signup-form" methods="POST">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label> Username</label>
+                        <input type="text"  name="dusername" placeholder="dupond">
+                    </div>
+
+                    <div class="input-group">
+                        <label> Password</label>
+                        <input type="text"  name="dpassword" placeholder="*******">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label> Email </label>
+                        <input type="text"  name="dE-mail" placeholder="facultatif">
+                    </div>
+
+                    <div class="input-group">
+                        <label> Town </label>
+                        <input type="text"  name="dTown"  placeholder="facultatif">
+                    </div>
+                </div>
+                <input type="submit" id="login" value="submit">
+               <!-- <a href="signin.html" ></a><button type="submit"  class="btn" onclick="afficher()">SEND</button></a> -->
+
+              
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}
